@@ -1,7 +1,58 @@
-$color-primary: orange;
-$color-primary: gray;
-$color-primary: royalblue;
+$color-primary:orange;
+$color-secondary:green;
+$color-tertiary:royalblue;
+
+$font-size-lg:40px;
+$font-size-md:30px;
+$font-size-sm:20px;
+
+@mixin headingStyle($fontSize:$font-size-sm) {
+    color: $color-secondary;
+    text-align: center;
+    font-size: $fontSize;
+}
+
+@mixin transition($params...) {
+    transition: $params;
+    -webkit-transition: $params;
+    -moz-transition: $params;
+    -o-transition: $params;
+}
 
 body {
-    background-color: red;
+    direction: rtl;
+}
+
+.nav {
+    background-color: $color-primary;
+
+    ul li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-secondary;
+        font-size: $font-size-sm;
+
+        &:hover {
+            color: $color-tertiary;
+            font-size: $font-size-md;
+        }
+    }
+}
+
+.banner h1 {
+    @include headingStyle($font-size-lg);
+}
+
+.footer h3 {
+    @include headingStyle($font-size-lg);
+
+    &:hover {
+        color: $color-tertiary;
+        background-color: $color-primary;
+
+        @include transition(color 2s, background-color 4s);
+    }
 }
