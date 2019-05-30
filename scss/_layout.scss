@@ -17,3 +17,23 @@
     }
 
 }
+
+.about-us {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+
+    &-left{
+        width: 40%;
+
+        img{
+            width: 100%;
+            opacity: 0.7;
+        }
+
+    }
+
+    &-right {
+        width: 60%;
+    }
+}
