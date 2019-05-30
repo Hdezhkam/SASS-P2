@@ -1,3 +1,8 @@
+.card-overlay, .card-img {
+  width: 100%;
+  height: 100%;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -77,6 +82,40 @@ body {
 .main-btn:hover {
   background-color: #d3ab55;
   color: #262626;
+}
+
+.card {
+  width: 33.333%;
+  height: 30vw;
+  position: relative;
+}
+
+.card-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(211, 171, 85, 0.6);
+  z-index: 10;
+}
+
+.card-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 50%;
 }
 
 .header {
@@ -176,5 +215,13 @@ body {
 
 .about-us-right .description::first-letter {
   padding-left: 20px;
+}
+
+.gallery .cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=main.css.map */

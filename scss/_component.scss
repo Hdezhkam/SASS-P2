@@ -59,3 +59,26 @@
         color: $color-dark;
     }
 }
+
+.card{
+    width: 33.333%;
+    height: 30vw;
+    position: relative;
+
+    &-overlay{
+        @include flexLayout;
+        @extend %fullSpace;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $color-white;
+        background-color: rgba($color-primary,0.6);
+        z-index: 10;
+    }
+    &-img{
+        @extend %fullSpace;
+        object-fit: cover;
+        opacity: 50%;
+    }
+}
