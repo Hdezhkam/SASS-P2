@@ -10,6 +10,25 @@ sans-serif;
 $font-nunito: "Nunito",
 sans-serif;
 
+//-----------------------------Persian FONTS
+// $font-sahel: Sahel, Tahoma;
+// $font-nastaliq: Nastaliq, Tahoma;
+
+// @font-face {
+//     font-family: Sahel;
+//     src: url("../fonts/Sahel.eot");
+//     src: url("../fonts/Sahel.ttf") format("ttf"),
+//         url("../fonts/Sahel.woff") format("woff");
+//     font-weight: normal;
+    
+// }
+
+// @font-face {
+//     font-family: Nastaliq;
+//     src: url("../fonts/Irannastaliq.ttf");
+//     font-weight: normal;
+// }
+
 
 @mixin flexLayout {
     display: flex;
