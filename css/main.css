@@ -315,4 +315,10 @@ body {
   -webkit-transition: color .7s;
   transition: color .7s;
 }
+
+.footer-copyright-paragraph {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  color: #bbb;
+}
 /*# sourceMappingURL=main.css.map */

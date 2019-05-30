@@ -93,18 +93,18 @@
         margin-bottom: 70px;
     }
 
-    .social-media{
+    .social-media {
         display: flex;
         width: 300px;
         justify-content: space-between;
         margin-bottom: 70px;
 
-        &-item{
+        &-item {
             list-style: none;
 
         }
-        
-        &-link{
+
+        &-link {
             text-decoration: none;
             font-size: 50px;
             color: $color-secondary;
@@ -114,7 +114,11 @@
                 transition: color .7s;
             }
         }
+    }
 
-        
+    &-copyright-paragraph {
+        font-family: $font-josefinSans;
+        font-size: 15px;
+        color: $color-secondary;
     }
 }
