@@ -32,6 +32,10 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .hamberger-menu .menu-line {
@@ -200,6 +204,8 @@ body {
   background-color: #262626;
   position: fixed;
   left: -50vw;
+  -webkit-transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+  transition: left 0.8s cubic-bezier(1, 0, 0, 1);
 }
 
 .navbar-navigation-left .left-img {
@@ -241,6 +247,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+  transition: right 0.8s cubic-bezier(1, 0, 0, 1);
 }
 
 .navbar-navigation .nav-list-item {
@@ -267,12 +275,17 @@ body {
   letter-spacing: 4px;
 }
 
-.checkbox:checked ~ .navba-navigation .navbar-navigation.left {
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
   left: 0;
 }
 
-.checkbox:checked ~ .navba-navigation .navbar-navigation.right {
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
   right: 0;
+}
+
+.checkbox:checked ~ .hamberger-menu .menu {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
 }
 
 .header {

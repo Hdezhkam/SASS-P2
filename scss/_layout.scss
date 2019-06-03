@@ -14,6 +14,7 @@
             background-color: $color-dark;
             position: fixed;
             left: -50vw;
+            transition: left 0.8s cubic-bezier(1, 0, 0, 1);
 
             .left-img{
                 width: 50%;
@@ -29,7 +30,7 @@
             }
             .left-img-2{
                 top: 35%;
-                left: 25%;
+                left: 25%; 
             }
             .left-img-3{
                 top: 55%;
@@ -43,6 +44,7 @@
             position: fixed; 
             right: -50vw;
             @include flexLayout;
+            transition: right 0.8s cubic-bezier(1, 0, 0, 1);
         }
 
         .nav-list{
@@ -69,11 +71,15 @@
     }
 }
 
-.checkbox:checked~ .navba-navigation .navbar-navigation.left{
+.checkbox:checked~ .navbar-navigation .navbar-navigation-left{
     left: 0;
 }
-.checkbox:checked~ .navba-navigation .navbar-navigation.right{
+.checkbox:checked~ .navbar-navigation .navbar-navigation-right{
     right: 0;
+}
+
+.checkbox:checked~ .hamberger-menu .menu{
+    transform: rotateZ(90deg);
 }
 
 .header {
