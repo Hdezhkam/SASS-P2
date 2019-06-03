@@ -81,7 +81,15 @@
 .checkbox:checked~ .hamberger-menu .menu{
     transform: rotateZ(90deg);
 }
-
+.checkbox:checked~ .hamberger-menu .menu-line-1{
+    transform: rotateZ(-40deg);
+}
+.checkbox:checked~ .hamberger-menu .menu-line-2{
+    opacity: 0;
+}
+.checkbox:checked~ .hamberger-menu .menu-line-3{
+    transform: rotateZ(+40deg);
+}
 .header {
     width: 100%;
     height: 100vh;
